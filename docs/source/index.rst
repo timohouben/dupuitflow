@@ -1,8 +1,8 @@
 =======================
-YOUR_PACKAGE Quickstart
+dupuitflow Quickstart
 =======================
 
-YOUR_PACKAGE: A Python template.
+dupuitflow: A Python template.
 
 
 Installation
@@ -10,7 +10,7 @@ Installation
 
 .. code-block:: none
 
-    pip install YOUR_PACKAGE
+    pip install dupuitflow
 
 
 Further Information
@@ -22,4 +22,4 @@ Requirements
 License
 =======
 
-`MIT <https://github.com/YOUR_NAME/YOUR_PACKAGE/blob/master/LICENSE>`_ © 2019
+`MIT <https://github.com/YOUR_NAME/dupuitflow/blob/master/LICENSE>`_ © 2019

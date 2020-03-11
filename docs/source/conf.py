@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# YOUR_PACKAGE documentation build configuration file, created by
+# dupuitflow documentation build configuration file, created by
 # sphinx-quickstart on Fri Jan  5 14:20:43 2018.
 #
 # This file is execfile()d with the current directory set to its
@@ -22,10 +22,10 @@
 # is needed in order to build the documentation
 import os
 import sys
-# this line is needed, if the YOUR_PACKAGE is not installed
+# this line is needed, if the dupuitflow is not installed
 sys.path.insert(0, os.path.abspath("../../"))
 
-from YOUR_PACKAGE import __version__ as ver
+from dupuitflow import __version__ as ver
 
 
 def skip(app, what, name, obj, skip, options):
@@ -96,7 +96,7 @@ source_suffix = ".rst"
 master_doc = "contents"
 
 # General information about the project.
-project = "YOUR_PACKAGE"
+project = "dupuitflow"
 copyright = "2019, YOUR_NAME"
 author = "YOUR_NAME"
 
@@ -171,7 +171,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "YOUR_PACKAGEdoc"
+htmlhelp_basename = "dupuitflowdoc"
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -200,8 +200,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "YOUR_PACKAGE.tex",
-        "YOUR_PACKAGE Documentation",
+        "dupuitflow.tex",
+        "dupuitflow Documentation",
         "YOUR_NAME",
         "manual",
     )
@@ -213,7 +213,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "YOUR_PACKAGE", "YOUR_PACKAGE Documentation", [author], 1)
+    (master_doc, "dupuitflow", "dupuitflow Documentation", [author], 1)
 ]
 
 
@@ -225,10 +225,10 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "YOUR_PACKAGE",
-        "YOUR_PACKAGE Documentation",
+        "dupuitflow",
+        "dupuitflow Documentation",
         author,
-        "YOUR_PACKAGE",
+        "dupuitflow",
         "A Python template.",
         "Miscellaneous",
     )

@@ -1,6 +1,6 @@
 ======================
-YOUR_PACKAGE Tutorials
+dupuitflow Tutorials
 ======================
 
-In the following you will find several Tutorials on how to use YOUR_PACKAGE to
+In the following you will find several Tutorials on how to use dupuitflow to
 explore its whole beauty and power.

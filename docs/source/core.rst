@@ -1,7 +1,7 @@
-YOUR_PACKAGE.core
+dupuitflow.core
 =================
 
-.. automodule:: YOUR_PACKAGE.core
+.. automodule:: dupuitflow.core
    :members:
    :undoc-members:
    :inherited-members:

@@ -1,8 +1,8 @@
 ================
-YOUR_PACKAGE API
+dupuitflow API
 ================
 
-.. automodule:: YOUR_PACKAGE
+.. automodule:: dupuitflow
 
 .. raw:: latex
 

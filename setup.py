@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""YOUR_PACKAGE: A Python template."""
+"""dupuitflow: A Python wrapper for a Fortran90 coded semi-analytical solution of the linearez Boussinesq equation evoking the Dupuit assumptions."""
 
 import os
 import codecs
@@ -55,19 +55,19 @@ CLASSIFIERS = [
     "Topic :: Utilities",
 ]
 
-VERSION = find_version("YOUR_PACKAGE", "_version.py")
+VERSION = find_version("dupuitflow", "_version.py")
 
 setup(
-    name="YOUR_PACKAGE",
-    version=VERSION,
-    maintainer="YOUR_NAME",
-    maintainer_email="YOUR_EMAIL",
+    name="dupuitflow",
+    version="0.0.1",
+    maintainer="Timo Houben",
+    maintainer_email="timo.houben@ufz.de",
     description=DOCLINES[0],
     long_description=README,
     long_description_content_type="text/markdown",
-    author="YOUR_NAME",
-    author_email="YOUR_EMAIL",
-    url="https://github.com/YOUR_GITHUB_NAME/YOUR_PACKAGE",
+    author="Timo Houben",
+    author_email="timo.houben@ufz.de",
+    url="https://github.com/timohouben/groundwatermodel",
     license="MIT",
     classifiers=CLASSIFIERS,
     platforms=["Windows", "Linux", "Solaris", "Mac OS-X", "Unix"],

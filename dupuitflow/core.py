@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-The core module of YOUR_PACKAGE.
+The core module of dupuitflow.
 
 The following functions are provided
 
-.. currentmodule:: YOUR_PACKAGE.core
+.. currentmodule:: dupuitflow.core
 
 .. autosummary::
    dummy_func
 """
 from __future__ import division, absolute_import, print_function
 
-from YOUR_PACKAGE import __version__
+from dupuitflow import __version__
 
 
 def dummy_func(dummy_arg=1, **kwargs):
