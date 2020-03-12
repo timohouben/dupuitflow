@@ -1,6 +1,9 @@
 # dupuitflow
 A Python template.
 
+
+[![Coverage Status](https://coveralls.io/repos/github/timohouben/dupuitflow/badge.svg?branch=master)](https://coveralls.io/github/timohouben/dupuitflow?branch=master)
+
 ## Replace
 * ``dupuitflow`` - package name (also folder)
 * ``YOUR_NAME`` - your real name
