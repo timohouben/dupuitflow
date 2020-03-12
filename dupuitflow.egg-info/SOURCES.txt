@@ -8,6 +8,7 @@ docs/requirements.txt
 docs/source/conf.py
 docs/source/contents.rst
 docs/source/core.rst
+docs/source/first_file.rst
 docs/source/index.rst
 docs/source/package.rst
 docs/source/tutorials.rst
@@ -15,7 +16,7 @@ docs/source/_templates/layout.html
 dupuitflow/__init__.py
 dupuitflow/_version.py
 dupuitflow/core.py
-dupuitflow/test.py
+dupuitflow/first_file.py
 dupuitflow.egg-info/PKG-INFO
 dupuitflow.egg-info/SOURCES.txt
 dupuitflow.egg-info/dependency_links.txt
