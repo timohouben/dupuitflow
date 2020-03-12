@@ -1,7 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-Test file.
+A test module of dupuitflow.
+
+The following functions are provided
+
+.. currentmodule:: dupuitflow.test
+
+.. autosummary::
+   you_know_what
 """
+from __future__ import division, absolute_import, print_function
+
+from dupuitflow import __version__
 
 def you_know_what():
     """Say hello to my lovely little girl.
