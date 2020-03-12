@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""dupuitflow: A Python wrapper for a Fortran90 coded semi-analytical solution of the linearez Boussinesq equation evoking the Dupuit assumptions."""
+"""dupuitflow: A python wrapper for a Fortran90 coded semi-analytical solution of the linearized Boussinesq equation evoking the Dupuit assumptions."""
 
 import os
 import codecs

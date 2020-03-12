@@ -1,5 +1,5 @@
 [run]
-source = YOUR_PACKAGE
+source = dupuitflow
 omit =
     *docs*
     *examples*

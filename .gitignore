@@ -1,3 +1,5 @@
 .DS_Store
 build
 dupuitflow.egg-info
+template_README.md
+todo.md

@@ -11,4 +11,4 @@ All notable changes to **dupuitflow** will be documented in this file.
 
 ### Changes
 
-[Unreleased]: https://github.com/YOUR_GITHUB_NAME/dupuitflow/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/timohouben/dupuitflow/compare/v0.0.0...HEAD

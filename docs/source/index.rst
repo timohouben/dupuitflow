@@ -22,4 +22,4 @@ Requirements
 License
 =======
 
-`MIT <https://github.com/YOUR_NAME/dupuitflow/blob/master/LICENSE>`_ © 2019
+`MIT <https://github.com/Timo Houben/dupuitflow/blob/master/LICENSE>`_ © 2019

@@ -97,8 +97,8 @@ master_doc = "contents"
 
 # General information about the project.
 project = "dupuitflow"
-copyright = "2019, YOUR_NAME"
-author = "YOUR_NAME"
+copyright = "2019, Timo Houben"
+author = "Timo Houben"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -202,7 +202,7 @@ latex_documents = [
         master_doc,
         "dupuitflow.tex",
         "dupuitflow Documentation",
-        "YOUR_NAME",
+        "Timo Houben",
         "manual",
     )
 ]
