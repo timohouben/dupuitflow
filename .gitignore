@@ -1,5 +1,18 @@
-.DS_Store
+# build
 build
+
+# Eggs
 dupuitflow.egg-info
-template_README.md
+
+# Private
 todo.md
+template_README.md
+
+# Python
+__pycache__
+
+# PyPi
+dist
+
+# MacOS
+.DS_Store
