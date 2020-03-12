@@ -9,6 +9,7 @@ The following functions are provided
 .. autosummary::
    you_know_what
 """
+
 from __future__ import division, absolute_import, print_function
 
 from dupuitflow import __version__
