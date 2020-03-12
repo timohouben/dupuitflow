@@ -12,3 +12,4 @@ dupuitflow API
    :hidden:
 
    core.rst
+   first_file.rst
