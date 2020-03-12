@@ -8,6 +8,7 @@ The following functions are provided
 
 .. autosummary::
    dummy_func
+   you_know_what
 """
 from __future__ import division, absolute_import, print_function
 
