@@ -4,7 +4,7 @@ A Python template.
 ## Replace
 * ``dupuitflow`` - package name (also folder)
 * ``YOUR_NAME`` - your real name
-* ``YOUR_EMAIL`` - your email address
+* ``timo.houben@ufz.de`` - your email address
 * ``YOUR_GITHUB_NAME`` - your github name or organization
 * ``YOUR_TWINE_USERNAME`` - your user name on PyPI, see ``.travis.yml``
 
