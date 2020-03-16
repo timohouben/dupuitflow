@@ -29,16 +29,16 @@ env:
       python -m pytest --cov dupuit_flow --cov-report term-missing -v tests/
       python -m coveralls
     fi
-#after_success:
+after_success:
   # pypi upload (test allways and official on TAG)
-#  - python -m pip install twine
-#  - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ wheelhouse/*.whl
-#  - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ dist/*.tar.gz
-#  - |
-#    if [[ $TRAVIS_TAG ]]; then
-#      python -m twine upload --skip-existing wheelhouse/*.whl
-#      python -m twine upload --skip-existing dist/*.tar.gz
-#    fi
+  - python -m pip install twine
+  - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ wheelhouse/*.whl
+  - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ dist/*.tar.gz
+  - |
+    if [[ $TRAVIS_TAG ]]; then
+      python -m twine upload --skip-existing wheelhouse/*.whl
+      python -m twine upload --skip-existing dist/*.tar.gz
+    fi
 notifications:
   email:
     recipients:
