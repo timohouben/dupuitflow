@@ -1,5 +1,5 @@
 dupuitflow.core
-=================
+===============
 
 .. automodule:: dupuitflow.core
    :members:

@@ -11,4 +11,7 @@ dupuitflow API
 .. toctree::
    :hidden:
 
-   core.rst
+   dupuitflow_core.rst
+   fileclasses.rst
+   reader.rst
+   tools.rst
