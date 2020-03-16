@@ -3,11 +3,6 @@
 The core module of dupuitflow.
 
 The following functions are provided
-
-.. currentmodule:: dupuitflow.core
-
-.. autosummary::
-   dummy_func
 """
 from __future__ import division, absolute_import, print_function
 

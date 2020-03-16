@@ -57,7 +57,7 @@ VERSION = find_version("dupuitflow", "_version.py")
 
 setup(
     name="dupuitflow",
-    version="0.0.1",
+    version=VERSION,
     maintainer="Timo Houben",
     maintainer_email="timo.houben@ufz.de",
     description=DOCLINES[0],

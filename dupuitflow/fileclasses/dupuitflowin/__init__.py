@@ -7,7 +7,8 @@ Class for the dupuitflow Dupuitflow.in file.
 File Class
 ^^^^^^^^^^
 .. autosummary::
-   DupuitFLowIn
+   DupuitFlowIn
+
 ----
 """
 from __future__ import absolute_import

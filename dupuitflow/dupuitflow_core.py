@@ -2,7 +2,7 @@
 """
 Base Class for a dupuitflow model run.
 
-.. currentmodule:: ogs5py.dupuitflow
+.. currentmodule:: dupuitflow.dupuitflow_core
 
 DupuitFlow Class
 ^^^^^^^^^^^^^^^^
@@ -18,10 +18,10 @@ import os
 
 from dupuitflow.fileclasses.dupuitflowin import DupuitFlowIn
 from dupuitflow.fileclasses.h1in import H1In
-# from dupuitflow.fileclasses.hinitialin import HinitialIn
-# from dupuitflow.fileclasses.outputlocationsin import OutputLocationsIn
-# from dupuitflow.fileclasses.outputtimesin import OutputTimesIn
-# from dupuitflow.fileclasses.rin import RIn
+from dupuitflow.fileclasses.hinitialin import HinitialIn
+from dupuitflow.fileclasses.outputlocationsin import OutputLocationsIn
+from dupuitflow.fileclasses.outputtimesin import OutputTimesIn
+from dupuitflow.fileclasses.rin import RIn
 
 from dupuitflow.fileclasses.base import BOTTOM_COM
 
@@ -62,7 +62,11 @@ class DupuitFlow(object):
         self.exitstatus = None
 
         self.dupuitflowin = DupuitFlowIn(task_root=task_root, task_id=task_id)
-        # and so on ...
+        self.h1in = H1In(task_root=task_root, task_id=task_id)
+        self.hinitialin = HinitialIn(task_root=task_root, task_id=task_id)
+        self.outputlocationsin = OutputLocationsIn(task_root=task_root, task_id=task_id)
+        self.outputtimesin = OutputTimesIn(task_root=task_root, task_id=task_id)
+        self.rin = RIn(task_root=task_root, task_id=task_id)
 
     @property
     def bottom_com(self):

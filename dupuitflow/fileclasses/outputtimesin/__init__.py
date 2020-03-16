@@ -2,12 +2,13 @@
 """
 Class for the dupuitflow OutputTimes.in file.
 
-.. currentmodule:: dupuitflow.fileclasses.outputtimes
+.. currentmodule:: dupuitflow.fileclasses.outputtimesin
 
 File Class
 ^^^^^^^^^^
 .. autosummary::
    OutputTimesIn
+
 ----
 """
 from __future__ import absolute_import

@@ -2,7 +2,7 @@
 """
 ogs5py subpackage providing the file classes.
 
-.. currentmodule:: ogs5py.fileclasses
+.. currentmodule:: dupuitflow.fileclasses
 
 Subpackages
 ^^^^^^^^^^^
@@ -16,10 +16,7 @@ File Classes
 Classes for all dupuitflow files
 
 .. autosummary::
-   asc.ASC
-   bc.BC
-
-   ...
+   dupuitflowin.DupuitFlowIn
 
 ----
 """

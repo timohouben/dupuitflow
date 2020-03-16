@@ -31,10 +31,10 @@ env:
     fi
 after_success:
   # pypi upload (test allways and official on TAG)
-  - python -m pip install twine
-  - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ wheelhouse/*.whl
-  - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ dist/*.tar.gz
-  - |
+  # - python -m pip install twine
+  # - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ wheelhouse/*.whl
+  # - python -m twine upload --verbose --skip-existing --repository-url https://test.pypi.org/legacy/ dist/*.tar.gz
+  # - |
     if [[ $TRAVIS_TAG ]]; then
       python -m twine upload --skip-existing wheelhouse/*.whl
       python -m twine upload --skip-existing dist/*.tar.gz
