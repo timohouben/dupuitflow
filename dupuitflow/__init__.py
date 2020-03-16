@@ -10,15 +10,14 @@ Subpackages
 
 .. autosummary::
     core
-    first_file
 
 """
 from __future__ import absolute_import
 
 from dupuitflow._version import __version__
-from dupuitflow import core
-from dupuitflow import first_file
+from dupuitflow.dupuitflow_core import DupuitFlow
+from dupuitflow.fileclasses import DupuitFlowIn
+from dupuitflow.fileclasses import H1In
 
 __all__ = ["__version__"]
 __all__ += ["core"]
-__all__ += ["first_file"]

@@ -22,6 +22,7 @@
 # is needed in order to build the documentation
 import os
 import sys
+
 # this line is needed, if the dupuitflow is not installed
 sys.path.insert(0, os.path.abspath("../../"))
 
@@ -198,13 +199,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (
-        master_doc,
-        "dupuitflow.tex",
-        "dupuitflow Documentation",
-        "Timo Houben",
-        "manual",
-    )
+    (master_doc, "dupuitflow.tex", "dupuitflow Documentation", "Timo Houben", "manual")
 ]
 # latex_use_parts = True
 
@@ -212,9 +207,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, "dupuitflow", "dupuitflow Documentation", [author], 1)
-]
+man_pages = [(master_doc, "dupuitflow", "dupuitflow Documentation", [author], 1)]
 
 
 # -- Options for Texinfo output -------------------------------------------
