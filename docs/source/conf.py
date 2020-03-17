@@ -98,7 +98,7 @@ master_doc = "contents"
 
 # General information about the project.
 project = "dupuitflow"
-copyright = "2019, Timo Houben"
+copyright = "2020, Timo Houben"
 author = "Timo Houben"
 
 # The version info for the project you're documenting, acts as replacement for

@@ -8,7 +8,7 @@ import unittest
 from dupuitflow import __version__, core
 
 
-class Test(unittest.TestCase):
+class TestDupuitFlow(unittest.TestCase):
     def setUp(self):
         self.version = __version__
 

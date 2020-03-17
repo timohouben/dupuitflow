@@ -16,4 +16,4 @@ I would like to refer to the corresponding publication from 2012:
 For question related to the Fortran code please contact Gerrit de Rooij directly. For questions and remarks to the python wrapper please contact [Timo Houben](https://www.ufz.de/index.php?en=43660) or use the provided git services.
 
 # Acknowledgements
-This package was build based upon the template from [Sebastian Mueller](https://github.com/MuellerSeb/template).
+This package was build based upon the template from [Sebastian Mueller](https://github.com/MuellerSeb/template) and heavily inspired by the structure of [ogs5py](https://github.com/GeoStat-Framework/ogs5py).
