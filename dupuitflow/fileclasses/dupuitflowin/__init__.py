@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Class for the dupuitflow Dupuitflow.in file.
+Class for the dupuitflow DupuitFlow.IN file.
 
 .. currentmodule:: dupuitflow.fileclasses.dupuitflowin
 

@@ -1,8 +1,8 @@
 # dupuitflow
 
-dupuitflow is not available yet.
+dupuitflow is available on [GitHub](https://github.com/timohouben/dupuitflow)
 
 
 ## Main Authors
 
-- [Timo Houben](https://github.com/timohouben), Email:  <YOUR_MAIL>
+- [Timo Houben](https://github.com/timohouben), Email:  <timo.houben@ufz.de>

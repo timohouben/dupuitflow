@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-type definitions for ogs5
+type definitions for dupuitflow
 
 General Constants
 ^^^^^^^^^^^^^^^^^
 
 .. autosummary::
-   OGS_EXT
+   DupuitFlow_FileClasses
 
 """
 from __future__ import division, print_function, absolute_import
 
 # input files of dupuitflow
-DupuitFlow_FILES = [
-    "Dupuitflow.in",  # aquifer parameters
-    "H1.in",  # river stages over time
-    "Hinitial.in",  # initial river stage
-    "OutputLocations.in",  # output locations
-    "OutputTimes.in",  # output times
-    "R.in",  # recharge
+DupuitFlow_FileClasses = [
+    "dupuitflowin",  # aquifer parameters
+    "h1in",  # river stages over time
+    "hinitialin",  # initial river stage
+    "outputlocationsin",  # output locations
+    "outputtimesin",  # output times
+    "rin",  # recharge
 ]
 """list: all dupuitflow iput files"""

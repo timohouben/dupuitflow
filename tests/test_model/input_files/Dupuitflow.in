@@ -1,0 +1,8 @@
+Test 3  Transient, leaky, rainfall
+K         D         L         mu        a         b
+5.00      6.0       80.0      0.2       0.001     0.0055
+Steady or non-steady flow
+nonst
+Maxn   Interval Tolerance
+10000  20       0.001
+

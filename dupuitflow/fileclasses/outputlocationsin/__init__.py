@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Class for the dupuitflow OutputLocations.in file.
+Class for the dupuitflow OutputLocations.IN file.
 
 .. currentmodule:: dupuitflow.fileclasses.outputlocationsin
 

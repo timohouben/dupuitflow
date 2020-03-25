@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Class for the dupuitflow Hinitial.in file.
+Class for the dupuitflow Hinitial.IN file.
 
 .. currentmodule:: dupuitflow.fileclasses.hinitialin
 

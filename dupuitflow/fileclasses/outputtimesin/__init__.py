@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Class for the dupuitflow OutputTimes.in file.
+Class for the dupuitflow OutputTimes.IN file.
 
 .. currentmodule:: dupuitflow.fileclasses.outputtimesin
 
