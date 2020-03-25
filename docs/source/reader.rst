@@ -5,3 +5,5 @@ dupuitflow.reader
 
 .. toctree::
    :hidden:
+
+   reader.reader.rst

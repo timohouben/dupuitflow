@@ -53,7 +53,9 @@ CLASSIFIERS = [
     "Topic :: Utilities",
 ]
 
+
 VERSION = find_version("dupuitflow", "_version.py")
+
 
 setup(
     name="dupuitflow",
