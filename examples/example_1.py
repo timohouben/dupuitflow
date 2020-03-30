@@ -7,7 +7,7 @@ import numpy as np
 
 task_root = "TEST"
 task_id = "dupuitflow_ex_1"
-exe = "/Users/houben/phd/chs_and_others/Gerrit/gw_model/new_version_V5/a.out"
+exe = "PATH/TO/THE/GROUNDWATERMODEL/EXECUTABLE"
 testmodel = DupuitFlow(task_root=task_root, task_id=task_id)
 # set parameters for DupuitFlow.IN
 testmodel.dupuitflowin.K = 5
