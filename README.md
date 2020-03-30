@@ -31,9 +31,9 @@ python3 setup.py install
 
 # Examples
 
-You can set up the dupuit flow model with a script like this one:
+You can set up the dupuit flow model with a script like the following one. It can be found [here](examples/example_1.py):
 
-```
+```python
 # -*- coding: utf-8 -*-
 """
 This is an example for a dupuitflow model setup.
@@ -82,7 +82,7 @@ Besides some output files in a directory it produces the following plot:
 
 ![Summary plot for a transient model][summary_transient]
 
-[summary_transient]: https://github.com/adam-p//Users/houben/phd/python/dupuitflow/examples/dupuitflow_example_1/dupuitflow_ex_1_2020-03-30_17-21-20/plots/summary_transient.png "Summary plot"
+[summary_transient]: examples/dupuitflow_example_1/dupuitflow_ex_1_2020-03-30_17-21-20/plots/summary_transient.png "Summary plot"
 
 # Acknowledgements
 This package was build based upon the template from [Sebastian Mueller](https://github.com/MuellerSeb/template) and inspired by the structure of [ogs5py](https://github.com/GeoStat-Framework/ogs5py).
