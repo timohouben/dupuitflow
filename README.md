@@ -15,9 +15,19 @@ I would like to refer to the corresponding publication from 2012:
 
 For question related to the Fortran code please contact Gerrit de Rooij directly. For questions and remarks to the python wrapper please contact [Timo Houben](https://www.ufz.de/index.php?en=43660) or use the provided git services.
 
-# Installations
-
-
+# Installation
+Install python3.6 on your system. Download and unzip the repository. Open a terminal and change directory to the folder containing the `setup.py`.
+```
+cd PATH/TO/setup.py
+```
+Optionally, activate a virtual environment and install the dependencies.
+```
+pip install -r requirements.txt
+```
+Install dupuitflow package.
+```
+python3 setup.py install
+```
 
 # Acknowledgements
 This package was build based upon the template from [Sebastian Mueller](https://github.com/MuellerSeb/template) and inspired by the structure of [ogs5py](https://github.com/GeoStat-Framework/ogs5py).
