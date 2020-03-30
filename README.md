@@ -34,7 +34,7 @@ export PATH=/usr/bin:$PATH
 ```
 Try again!
 
-When you successfully compiled the F90 file set the path to this file equal to the attribute in the method `DupuiFlow.run_model(path/to/executable)`.
+When you successfully compiled the F90 file set the path to this file equal to the attribute in the method `DupuiFlow.run_model("path/to/executable")`.
 
 #### 2. Install the dupuitflow package
 
