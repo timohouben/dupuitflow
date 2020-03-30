@@ -13,6 +13,7 @@ from __future__ import division, print_function, absolute_import
 import matplotlib.pyplot as plt
 import os
 import numpy as np
+from matplotlib import cm
 
 
 def plot_summary_transient(path, pop_first=True, show=False):
@@ -32,6 +33,7 @@ def plot_summary_transient(path, pop_first=True, show=False):
     show : bool, optional
         If True plot will be shown.
     """
+    print("Plotting...")
     from dupuitflow.reader.reader import steady_or_transient
     # check if path is correct
     if not os.path.exists(os.path.join(path, "txt")):
@@ -54,13 +56,16 @@ def plot_summary_transient(path, pop_first=True, show=False):
     # make directory for plots
     if not os.path.exists(os.path.join(path, 'plots')):
         os.mkdir(os.path.join(path, 'plots'))
-    elif steady is False:
+    if steady is False:
         # load variables to plot from files
+        # Y : output locations
         Y = np.loadtxt(
             os.path.join(path, "input_files", "OutputLocations.IN"), skiprows=0
         )
         Y = np.tile(Y, [61, 1])
+        # Z : head data
         Z = np.loadtxt(os.path.join(path, "txt", "head.txt"), skiprows=1)
+        # X : time data
         X = np.loadtxt(os.path.join(path, "txt", "aqs_time.txt"), skiprows=0)
         X = np.tile(X, [5, 1]).transpose()
         aqs_average_H = np.loadtxt(
@@ -74,18 +79,24 @@ def plot_summary_transient(path, pop_first=True, show=False):
             print("First value of pertubation measure, aquifer scale hydraulic cond. and flux has been set to np.nan.")
         # format matplotlib plot
         plt.style.use("ggplot")
-        plt.tight_layout()
+
         # create figure
         fig = plt.figure(figsize=(20, 10))
         fig.suptitle("Results summary for transient model run " + os.path.dirname(path))
         # plot 3d wireframe
         ax1 = fig.add_subplot(1, 2, 1, projection="3d")
+        # plot
         ax1.plot_wireframe(X, Y, Z, rstride=1, cstride=0)
+        # ax1.plot_surface(X, Y, Z, cmap=cm.coolwarm, rstride=1, cstride=1,
+        #                        linewidth=0, antialiased=False, alpha=0.5, shade=True)#, rstride=1, cstride=0)
         ax1.set_title("head over time and location")
         ax1.view_init(40, 130)
         ax1.set_xlabel("Time")
         ax1.set_ylabel("Location")
         ax1.set_zlabel("Head")
+        # invert axis via swapping limits
+        ax1.set_xlim(np.max(X), np.min(X))
+        ax1.set_ylim(np.max(Y), np.min(Y))
         # plot average head
         ax2 = fig.add_subplot(2, 4, 3)
         ax2.plot(X[:, 0], aqs_average_H)
@@ -112,12 +123,13 @@ def plot_summary_transient(path, pop_first=True, show=False):
         ax5.set_ylabel("Conductivity")
         # padding in subplots
         plt.subplots_adjust(
-            top=0.92, bottom=0.08, left=0.10, right=0.95, hspace=0.25, wspace=0.35
+            top=0.92, bottom=0.08, left=0.05, right=0.95, hspace=0.25, wspace=0.35
         )
         # save figure
-        fig.savefig(os.path.join(path, 'plots', 'summary_transient.png'), dpi=600)
+        fig.savefig(os.path.join(path, 'plots', 'summary_transient.png'), dpi=300)
         # HIER WEITRER MACHEN
         if show is True:
+            print("Opening plot ...")
             plt.show()
 
 

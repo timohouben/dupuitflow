@@ -136,9 +136,27 @@ class DupuitFlow(object):
         print("Not implemented.")
         pass
 
-    def plot_modelling_results(self):
+    def plot_modelling_results(self, pop_first=True, show=False):
         """
-        asd
+        Call plotting routines which correspond to the dupuitflow model.
+
+        Parameters
+        ----------
+        path: string
+            path to the modelling results. Subfolder must be "input_files"
+            containing the input files and "output_files" containing the
+            output_files.
+        pop_first : bool, optional
+            True : First value of time series (pertubation measure, aquifer scale
+            hydraulic cond. and flux) at t = 0 will be set to np.nan since it can
+            be very high.
+        show : bool, optional
+            If True plot will be shown.
+
+        Yields
+        ------
+        A new folder called "plots" and a summary plot for a transient or a
+        steady-state model run.
         """
         from dupuitflow.tools.plots import plot_summary_transient
         # check if mode ran
@@ -151,10 +169,11 @@ class DupuitFlow(object):
             steady = steady_or_transient(os.path.join(self._output_dir, "input_files"))
             # steady = .....
             if steady is True:
+                print("The model is a steady-state model. No plotting function implemented.")
                 # CALL THAT OTHER FUNCTION FOR STEADY RUNS
                 pass
             elif steady is False:
-                plot_summary_transient(self._output_dir)
+                plot_summary_transient(self._output_dir, pop_first, show)
 
     def load_dupuitflow_model():
         """
@@ -212,7 +231,7 @@ class DupuitFlow(object):
             raise FileNotFoundError(
                 "The groundwater model executable which you specified does not exist."
             )
-        # asdasd
+        # get the name of the directory from the executable
         dirname_path_exe = os.path.dirname(path_exe)
         # create an result folder with the task name and the times
         time_now = datetime.now()
