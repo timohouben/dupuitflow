@@ -5,7 +5,7 @@ This is an example for a dupuitflow model setup.
 from dupuitflow import DupuitFlow
 import numpy as np
 
-task_root = "TEST"
+task_root = "examples/dupuitflow_example_1"
 task_id = "dupuitflow_ex_1"
 exe = "/Users/houben/phd/chs_and_others/Gerrit/gw_model/new_version_V5/a.out"
 testmodel = DupuitFlow(task_root=task_root, task_id=task_id)
@@ -39,4 +39,4 @@ testmodel.run_model(exe)
 # extract the modelling reults from the standard output files and save them
 # in a new directory. Return head time series and aquifer scale time series.
 head_ts, aqs_ts = testmodel.read_modelling_results()
-testmodel.plot_modelling_results(pop_first=False, show=True)
+testmodel.plot_modelling_results(pop_first=True, show=True)
