@@ -16,6 +16,28 @@ I would like to refer to the corresponding publication from 2012:
 For question related to the Fortran code please contact Gerrit de Rooij directly. For questions and remarks to the python wrapper please contact [Timo Houben](https://www.ufz.de/index.php?en=43660) or use the provided git services.
 
 # Installation
+
+#### 1. Compile the F90 code on your system
+First, download the [fortran code](https://www.ufz.de/export/data/2/200312_Dupuitflow4.F90) from Gerrit de Rooij's page and compile it with a fortran compiler on your system. Follow [this link](https://gcc.gnu.org/wiki/GFortranBinaries) for infos on installation of the fortran compiler gcc.
+
+Compile the F90 code:
+```
+gfortran 200312_Dupuitflow4.F90
+```
+If you are on Mac sometimes the following error occurs.
+```
+FATAL:/opt/local/bin/../libexec/as/x86_64/as: I don't understand 'm' flag!
+```
+The following fixed it for me.
+```
+export PATH=/usr/bin:$PATH
+```
+Try again!
+
+When you successfully compiled the F90 file set the path to this file equal to the attribute in the method `DupuiFlow.run_model(path/to/executable)`.
+
+#### 2. Install the dupuitflow package
+
 Install python3.6 on your system. Download and unzip the repository. Open a terminal and change directory to the folder containing the `setup.py`.
 ```
 cd PATH/TO/setup.py
