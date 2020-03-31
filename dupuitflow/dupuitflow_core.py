@@ -280,3 +280,4 @@ class DupuitFlow(object):
         for file in os.listdir(input_dir):
             if file.endswith(".mod"):
                 os.remove(os.path.join(input_dir, file))
+        return model_run.returncode
