@@ -58,16 +58,16 @@ def plot_summary_transient(path, pop_first=True, show=False):
         os.mkdir(os.path.join(path, 'plots'))
     if steady is False:
         # load variables to plot from files
+        # Z : head data
+        Z = np.loadtxt(os.path.join(path, "txt", "head.txt"), skiprows=1)
         # Y : output locations
         Y = np.loadtxt(
             os.path.join(path, "input_files", "OutputLocations.IN"), skiprows=0
         )
-        Y = np.tile(Y, [61, 1])
-        # Z : head data
-        Z = np.loadtxt(os.path.join(path, "txt", "head.txt"), skiprows=1)
+        Y_tile = np.tile(Y, [len(Z), 1])
         # X : time data
         X = np.loadtxt(os.path.join(path, "txt", "aqs_time.txt"), skiprows=0)
-        X = np.tile(X, [5, 1]).transpose()
+        X_tile = np.tile(X, [len(Y), 1]).transpose()
         aqs_average_H = np.loadtxt(
             os.path.join(path, "txt", "aqs_average_H.txt"), skiprows=0
         )
@@ -86,7 +86,7 @@ def plot_summary_transient(path, pop_first=True, show=False):
         # plot 3d wireframe
         ax1 = fig.add_subplot(1, 2, 1, projection="3d")
         # plot
-        ax1.plot_wireframe(X, Y, Z, rstride=1, cstride=0)
+        ax1.plot_wireframe(X_tile, Y_tile, Z, rstride=1, cstride=0)
         # ax1.plot_surface(X, Y, Z, cmap=cm.coolwarm, rstride=1, cstride=1,
         #                        linewidth=0, antialiased=False, alpha=0.5, shade=True)#, rstride=1, cstride=0)
         ax1.set_title("head over time and location")
@@ -99,25 +99,25 @@ def plot_summary_transient(path, pop_first=True, show=False):
         ax1.set_ylim(np.max(Y), np.min(Y))
         # plot average head
         ax2 = fig.add_subplot(2, 4, 3)
-        ax2.plot(X[:, 0], aqs_average_H)
+        ax2.plot(X, aqs_average_H)
         ax2.set_title("Average Head")
         ax2.set_xlabel("Time")
         ax2.set_ylabel("Head")
         # plot pertubation
         ax3 = fig.add_subplot(2, 4, 4)
-        ax3.plot(X[:, 0], aqs_P)
+        ax3.plot(X, aqs_P)
         ax3.set_title("Perturbation Measure")
         ax3.set_xlabel("Time")
         ax3.set_ylabel("Perturbation")
         # plot flux
         ax4 = fig.add_subplot(2, 4, 7)
-        ax4.plot(X[:, 0], aqs_Q)
+        ax4.plot(X, aqs_Q)
         ax4.set_title("Flux")
         ax4.set_xlabel("Time")
         ax4.set_ylabel("Flux")
         # plot aqs hydrauic cond
         ax5 = fig.add_subplot(2, 4, 8)
-        ax5.plot(X[:, 0], aqs_Kup)
+        ax5.plot(X, aqs_Kup)
         ax5.set_title("Aquifer-scale Hydraulic Conductivity")
         ax5.set_xlabel("Time")
         ax5.set_ylabel("Conductivity")
