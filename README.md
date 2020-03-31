@@ -53,6 +53,8 @@ python3 setup.py install
 
 # Examples
 
+**WORKS ONLY FOR TRANSIENT SIMULATIONS**
+
 You can set up the dupuit flow model with a script like the following one. It can be found [here](examples/example_1.py):
 
 ```python

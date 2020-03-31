@@ -89,7 +89,7 @@ def read_modelling_results(path, savetxt=True):
         # save head file
         np.savetxt(os.path.join(path, "txt", "head.txt"), h_array, header=head_header)
         aquifer_scale_data = np.loadtxt(
-            os.path.join(path, "output_files", "AquiferScale.OUT"), skiprows=2
+            os.path.join(path, "output_files", "AquiferScale.OUT"), skiprows=2, converters={"************": -99999}
         )
         # save aquifer scale files and time
         for name, i in zip(variables_names, range(0, len(variables_names))):
