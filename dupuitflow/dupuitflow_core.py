@@ -265,7 +265,8 @@ class DupuitFlow(object):
         # execute groundwater model
         print("Starting groundwater model ...")
         model_run = subprocess.run(path_exe)
-        if model_run.returncode != 0:
+        return_code = model_run.returncode
+        if return_code != 0:
             print("Model run failed... ")
         else:
             print("Model run successfully finished!")
@@ -280,4 +281,4 @@ class DupuitFlow(object):
         for file in os.listdir(input_dir):
             if file.endswith(".mod"):
                 os.remove(os.path.join(input_dir, file))
-        return model_run.returncode
+        return return_code

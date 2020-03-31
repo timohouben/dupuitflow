@@ -35,7 +35,7 @@ testmodel.h1in.content_c2 = [4.2, 5.5, 5.5, 4.5]
 # write the input files
 testmodel.writeinput()
 # start the model runT
-testmodel.run_model(exe)
+exit_code = testmodel.run_model(exe)
 # extract the modelling reults from the standard output files and save them
 # in a new directory. Return head time series and aquifer scale time series.
 head_ts, aqs_ts = testmodel.read_modelling_results()
