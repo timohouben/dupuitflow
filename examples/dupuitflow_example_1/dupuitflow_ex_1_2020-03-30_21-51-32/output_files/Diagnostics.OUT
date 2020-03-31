@@ -1,6 +1,0 @@
- |-- Written with dupuitflow (0.0.1.dev2) on: 2020-03-30_21-5
-  FlowCase: nonste
- H(x,0) was given for neither x = 0 nor for x = L; added these values and updated NrLocationsHinitial to    4
-
- Changedrivers completed; Number of times H(L,t) and/or R change:     8
- The infinite sum for Q did not converge for dimensionless time     0.0000
