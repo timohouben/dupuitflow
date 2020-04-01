@@ -264,7 +264,9 @@ class DupuitFlow(object):
         os.chdir(input_dir)
         # execute groundwater model
         print("Starting groundwater model ...")
-        model_run = subprocess.run(path_exe)
+        #model_run = subprocess.run(path_exe)
+        # changed the subprocess call function to work (hopefully) on EVE
+        model_run = subprocess.call(path_exe, shell=True)
         return_code = model_run.returncode
         if return_code != 0:
             print("Model run failed... ")
