@@ -77,9 +77,14 @@ testmodel.dupuitflowin.mu = 0.2
 testmodel.dupuitflowin.a = 0.001
 testmodel.dupuitflowin.b = 0.0055
 testmodel.dupuitflowin.steady = False
+testmodel.dupuitflowin.nroutputlocations = 5
+testmodel.dupuitflowin.nroutputtimes = 61
 testmodel.dupuitflowin.maxn = 10000
 testmodel.dupuitflowin.interval = 20
 testmodel.dupuitflowin.tolerance = 0.001
+testmodel.dupuitflowin.nrlochini = 2
+testmodel.dupuitflowin.nrtimesh1 = 4
+testmodel.dupuitflowin.nrtimesr = 6
 # set OutputTimes.IN and OutputLocations.IN, OneColumnFiles
 testmodel.outputtimesin.content = (
     np.linspace(0, 49, 50).tolist() + np.linspace(50, 100, 11).tolist()
@@ -94,8 +99,8 @@ testmodel.h1in.content_c1 = [0, 20, 30, 100]
 testmodel.h1in.content_c2 = [4.2, 5.5, 5.5, 4.5]
 # write the input files
 testmodel.writeinput()
-# start the model run
-testmodel.run_model(exe)
+# start the model runT
+exit_code = testmodel.run_model(exe)
 # extract the modelling reults from the standard output files and save them
 # in a new directory. Return head time series and aquifer scale time series.
 head_ts, aqs_ts = testmodel.read_modelling_results()

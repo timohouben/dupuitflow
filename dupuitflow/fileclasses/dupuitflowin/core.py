@@ -23,6 +23,13 @@ class DupuitFlowIn(ParameterFiles):
         self.maxn = 10000
         self.interval = 20
         self.tolerance = 0.0001
+        self.nroutputlocations = None
+        self.nroutputtimes = None
+        self.nrlochini = None
+        self.nrtimesh1 = None
+        self.nrtimesr = None
+
+
 
     def writefile(self):
         """
@@ -60,10 +67,16 @@ class DupuitFlowIn(ParameterFiles):
                 file.write("Steady\n")
             else:
                 file.write("nonsteady\n")
-            file.write("Maxn            Interval        Tolerance\n")
+            file.write("NrOutputLocations    NrOutputTimes    Maxn  Interval Tolerance\n")
             file.write(
-                "{:0.0f}    {:0.0f}    {:4e}\n".format(
-                    self.maxn, self.interval, self.tolerance
+                "{:0.0f}    {:0.0f}    {:0.0f}    {:0.0f}    {:4e}\n".format(
+                    self.nroutputlocations, self.nroutputtimes, self.maxn, self.interval, self.tolerance
+                )
+            )
+            file.write("NrLocHini  NrTimesH1  NrTimesR\n")
+            file.write(
+                "{:0.0f}    {:0.0f}    {:0.0f}\n".format(
+                    self.nrlochini, self.nrtimesh1, self.nrtimesr 
                 )
             )
         return print("Wrote file DupuitFlow.IN")

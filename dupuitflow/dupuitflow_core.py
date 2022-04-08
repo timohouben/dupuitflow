@@ -275,6 +275,9 @@ class DupuitFlow(object):
         # copy output files in output_dir
         for file in os.listdir(input_dir):
             if file.endswith(".OUT"):
+                print(file)
+                print(os.path.join(input_dir, file))
+                print(output_files_dir)
                 shutil.move(os.path.join(input_dir, file), output_files_dir)
         # remove groundwater model executable
         os.remove(os.path.join(input_dir, os.path.basename(path_exe)))

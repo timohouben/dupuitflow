@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
-"""
-This is an example for a dupuitflow model setup.
-"""
 from dupuitflow import DupuitFlow
 import numpy as np
 
-task_root = "examples/dupuitflow_example_1"
-task_id = "dupuitflow_ex_1"
-exe = "/Users/houben/phd/chs_and_others/Gerrit/gw_model/new_version_V5/a.out"
+task_root = "path/to/root/dir"
+task_id = "testmodel1"
+exe = "path/to/exe/"
 testmodel = DupuitFlow(task_root=task_root, task_id=task_id)
 # set parameters for DupuitFlow.IN
 testmodel.dupuitflowin.K = 5
@@ -17,9 +14,14 @@ testmodel.dupuitflowin.mu = 0.2
 testmodel.dupuitflowin.a = 0.001
 testmodel.dupuitflowin.b = 0.0055
 testmodel.dupuitflowin.steady = False
+testmodel.dupuitflowin.nroutputlocations = 5
+testmodel.dupuitflowin.nroutputtimes = 61
 testmodel.dupuitflowin.maxn = 10000
 testmodel.dupuitflowin.interval = 20
 testmodel.dupuitflowin.tolerance = 0.001
+testmodel.dupuitflowin.nrlochini = 2
+testmodel.dupuitflowin.nrtimesh1 = 4
+testmodel.dupuitflowin.nrtimesr = 6
 # set OutputTimes.IN and OutputLocations.IN, OneColumnFiles
 testmodel.outputtimesin.content = (
     np.linspace(0, 49, 50).tolist() + np.linspace(50, 100, 11).tolist()
