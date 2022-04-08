@@ -1,0 +1,7 @@
+|-- Written with dupuitflow (0.0.1.dev2) on: 2020-03-30_17-20-13 --|
+K             D             L             mu            a             b
+5.000000e+00  6.000000e+00  8.000000e+01  2.000000e-01  1.000000e-03  5.500000e-03
+Steady or non-steady flow
+nonsteady
+Maxn            Interval        Tolerance
+10000    20    1.000000e-03

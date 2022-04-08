@@ -55,7 +55,7 @@ CLASSIFIERS = [
 
 
 VERSION = find_version("dupuitflow", "_version.py")
-
+print("Found version: ", VERSION)
 
 setup(
     name="dupuitflow",
