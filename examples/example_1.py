@@ -4,7 +4,7 @@ import numpy as np
 
 task_root = "path/to/root/dir"
 task_id = "testmodel1"
-exe = "path/to/exe/"
+exe = "/Users/houben/phd/chs_and_others/Gerrit/gw_model/download_20220408/a.out"
 testmodel = DupuitFlow(task_root=task_root, task_id=task_id)
 # set parameters for DupuitFlow.IN
 testmodel.dupuitflowin.K = 5

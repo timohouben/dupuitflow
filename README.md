@@ -111,7 +111,7 @@ Besides some output files in a directory it produces the following plot:
 
 ![Summary plot for a transient model][summary_transient]
 
-[summary_transient]: examples/dupuitflow_example_1/dupuitflow_ex_1_2020-03-30_17-21-20/plots/summary_transient.png "Summary plot"
+[summary_transient]: examples/testmodel1/plots/summary_transient.png "Summary plot"
 
 # Acknowledgements
 This package was build based upon the template from [Sebastian Mueller](https://github.com/MuellerSeb/template) and inspired by the structure of [ogs5py](https://github.com/GeoStat-Framework/ogs5py).

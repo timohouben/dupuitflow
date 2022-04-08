@@ -1,0 +1,30 @@
+ Output for |-- Written with dupuitflow (0.0.1.dev2) on: 2022-04-08_13-0
+
+          K          D          L         mu      alpha          b          A
+     5.0000     6.0000    80.0000     0.2000    -0.0010     0.0055    -1.0667
+ Evaluated sum terms  Interval  Tolerance
+               10001        20     0.0010
+
+ General flow problem, initially flat groundwater level, or steady flow: Generl
+
+ Number of locations for which H(x,0) is given:           4
+ First and last of those locations:     0.0000,    80.0000
+
+ Number of times for which H(1,t) is given:               4
+ First and last of those times:         0.0000,   100.0000
+
+ Number of times for which R(t) is given:                 6
+ First and last of those times:         9.0000,   100.0000
+
+ First and last location for which output will be generated:     0.0000,    80.0000
+ First and last time for which output will be generated:         0.0000,   100.0000
+
+
+ Asymptotic aquifer-scale hydraulic conductivities
+ Zero recharge    R constant     Leaky aquifer
+   9.2528E-01     1.1250E+00     1.1378E+00
+
+
+ Characteristic times of the aquifer
+ Zero recharge    R constant     Leaky aquifer
+   1.5916E+01     1.3278E+01     1.3138E+01
